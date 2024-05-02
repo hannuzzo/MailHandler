@@ -49,7 +49,7 @@
             if (mail.BCC != null && mail.BCC.Count() != 0)
                 pecMail.Bcc = string.Join(",", mail.BCC);
 
-            pecMail.Subject = mail.Body;
+            pecMail.Subject = mail.Subject;
             pecMail.Body = mail.Body;
 
             if (mail.Attachments != null && mail.Attachments.Count() != 0)
